@@ -17,6 +17,9 @@ function profilePics(param) {
     <div> class="imgOfPerson" 
     <img src="https://github.com/ data-index"${peopleName}"?size=250" alt="Profile image of data-index"${peopleName}">
     </div>
+    <div>
+    <img src="https://github.com/${people.githubUsername}?size=250" alt="Profile image of ${people.name}">
+    </div>
     `);
   }
 }
