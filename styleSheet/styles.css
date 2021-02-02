@@ -1,3 +1,16 @@
 body {
   background-color: #3d405b;
 }
+
+.imgOfPeople {
+  /* width: 250px;
+  height: 460px; */
+}
+
+#John {
+  height: 460px;
+}
+
+.pics {
+  height: 460px;
+}
