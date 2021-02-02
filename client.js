@@ -14,11 +14,8 @@ function profilePics(param) {
   // I need to append people from the people array-people.
   for (let people of param) {
     $('.imgOfPeople').append(`
-    <div> class="imgOfPerson" 
-    <img src="https://github.com/ data-index"${peopleName}"?size=250" alt="Profile image of data-index"${peopleName}">
-    </div>
-    <div>
-    <img src="https://github.com/${people.githubUsername}?size=250" alt="Profile image of ${people.name}">
+    <div id="">
+    <img src="https://github.com/${people.githubUsername}.png?size=250" alt="Profile image of ${people.name}">
     </div>
     `);
   }
