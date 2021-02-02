@@ -5,29 +5,18 @@ $(document).ready(onReady);
 function onReady() {
   console.log('Inside jQuery');
 
-  profilePics();
+  profilePics(people);
 }
 
-function profilePics(people) {
-  $('.imgOfPeople').append(`
-  <div class="pics">
-  <img src="./profilePictures/DustyM.png" alt="Image of Dusty" sizes="250">
-  </div class="pics">
-  <div>
-  <img src="./profilePictures/JohnS.png" alt="Image of John" sizes="250" id="John">
-  </div class="pics">
-  <div>
-  <img src="./profilePictures/JoshG.png" alt="Image of Josh" sizes="250" >
-  </div class="pics">
-  <div class="pics">
-  <img src="./profilePictures/McKynlee.png" alt="Image of McKynlee" sizes="250">
-  </div>
-  <img src="./profilePictures/PatrickN.png" alt="Image of Patrick" sizes="250">
-  <div class="pics">
-  <img src="./profilePictures/Vada.png" alt="Image of Vada" sizes="250">
-  </div>
-  <div class="pics">
-  <img src="./profilePictures/WilliamKrug.png" alt="Image of William" sizes="250">
-  </div>
-  `);
+function profilePics(param) {
+  let peopleName = $(param).data('param.name');
+
+  // I need to append people from the people array-people.
+  for (let people of param) {
+    $('.imgOfPeople').append(`
+    <div> class="imgOfPerson" 
+    <img src="https://github.com/ data-index"${peopleName}"?size=250" alt="Profile image of data-index"${peopleName}">
+    </div>
+    `);
+  }
 }
