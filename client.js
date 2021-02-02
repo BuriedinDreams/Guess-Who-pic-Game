@@ -6,10 +6,30 @@ function onReady() {
   console.log('Inside jQuery');
 
   profilePics(people);
+
+  // RandomNums( people )
+  randomNumber(people)
+
 }
 
-function profilePics(param) {
-  let peopleName = $(param).data('param.name');
+
+
+function RandomNums(param){
+
+  function randomNumber(min, max){
+    return Math.floor(Math.random() * (1 + max - min) + min);
+}
+
+}
+
+
+
+
+
+
+  alert(
+    ' Instructions: Choose one of the photos to see if you guessed the correct person by photo.'
+  );
 
   // I need to append people from the people array-people.
   for (let people of param) {
