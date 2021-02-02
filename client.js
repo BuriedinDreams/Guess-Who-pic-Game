@@ -5,7 +5,7 @@ $(document).ready(onReady);
 function onReady() {
   console.log('Inside jQuery');
 
-  $(document).on('load', profilePics);
+  profilePics();
 }
 
 function profilePics() {
